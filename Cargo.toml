@@ -3,4 +3,9 @@ name = "ns_io"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+# "cdylib" = Dynamic Library (.so / .dll)
+# "staticlib" = Static Library (.a / .lib)
+crate-type = ["cdylib", "staticlib"]
+
 [dependencies]
