@@ -28,7 +28,7 @@ It is designed to provide the ergonomics of high-level languages (like automatic
 You need the following tools installed to build **ns_io**:
 1. **Rust & Cargo** (For the backend)
 ```bash
-   curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```
 
