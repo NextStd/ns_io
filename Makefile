@@ -6,28 +6,38 @@ EXAMPLE_DIR = examples
 
 # Flags
 INCLUDES = -I.
-# Linker flags: Look in target/release, link ns_io, and "bake" the path (rpath)
 LIBS = -L$(RUST_DIR) -lns_io -lpthread -ldl -Wl,-rpath=$(RUST_DIR)
 
 # --- Targets ---
 
-.PHONY: all rust clean directories
+.PHONY: all rust clean directories list
 
 # 1. Create the bin directory
 directories:
-	mkdir -p $(BIN_DIR)
+	@mkdir -p $(BIN_DIR)
 
 # 2. Build the Rust Library
 rust:
-	cargo build --release
+	@cargo build --release
 
-# 3. THE PATTERN RULE
-# Usage: make 01_integer
-# Logic: Matches "01_integer", finds "examples/01_integer.c", outputs to "bin/01_integer"
+# 3. List all available examples
+list:
+	@echo "Available examples:"
+	@ls $(EXAMPLE_DIR)/*.c | sed 's|$(EXAMPLE_DIR)/||;s|\.c||' | sed 's|^|  |'
+	@echo ""
+	@echo "Usage:"
+	@echo "  make <name>   : Compile & Run (e.g., 'make 01_print_integer')"
+
+# 4. THE MAIN RULE: Compile AND Run
+# Usage: make 01_print_integer
 %: $(EXAMPLE_DIR)/%.c rust directories
-	$(CC) $< -o $(BIN_DIR)/$@ $(INCLUDES) $(LIBS)
+	@echo "Compiling $@..."
+	@$(CC) $< -o $(BIN_DIR)/$@ $(INCLUDES) $(LIBS)
+	@echo "--- Running $@ ---"
+	@./$(BIN_DIR)/$@
 
-# 4. Clean up
+# 5. Clean up
 clean:
-	cargo clean
-	rm -rf $(BIN_DIR)
+	@cargo clean
+	@rm -rf $(BIN_DIR)
+	@echo "Cleaned build artifacts."
