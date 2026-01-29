@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(add CHANGELOG)** Added CHANGELOG - ([512eb9f](https://github.com/NextStd/ns_io/commit/512eb9f07edd6b6225727b4f0323dab311046bc6)) by @Vaishnav-Sabari-Girish
+
 - **(add int print)** Added integer print - ([3e5bf67](https://github.com/NextStd/ns_io/commit/3e5bf675a6667a37c9c3b8bb54755229d821225e)) by @Vaishnav-Sabari-Girish
 
 - **(Initial Commit)** Initial Commit - ([d88448a](https://github.com/NextStd/ns_io/commit/d88448a925ec10716e5d66a786c1cde6b511b6b0)) by @Vaishnav-Sabari-Girish
