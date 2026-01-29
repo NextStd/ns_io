@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(add float and double)** Print float and double - ([ca02287](https://github.com/NextStd/ns_io/commit/ca022876c0c2b6424b52012a5fdb24832b54abe9))
+
 - **(add CHANGELOG)** Added CHANGELOG - ([512eb9f](https://github.com/NextStd/ns_io/commit/512eb9f07edd6b6225727b4f0323dab311046bc6)) by @Vaishnav-Sabari-Girish
 
 - **(add int print)** Added integer print - ([3e5bf67](https://github.com/NextStd/ns_io/commit/3e5bf675a6667a37c9c3b8bb54755229d821225e)) by @Vaishnav-Sabari-Girish
@@ -9,6 +11,8 @@
 
 
 ### :page_facing_up: Documentation
+
+- **(update readme)** Updated README.md - ([35b5f3e](https://github.com/NextStd/ns_io/commit/35b5f3e963ff88eaa7252b0e38408f87a5ca2957)) by @Vaishnav-Sabari-Girish
 
 - **(Updated README)** Updated README.md - ([54f82bd](https://github.com/NextStd/ns_io/commit/54f82bdfce6a8bf74b06f5ede9d2c98dbf4c53e2)) by @Vaishnav-Sabari-Girish
 

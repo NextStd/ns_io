@@ -18,7 +18,7 @@ directories:
 
 # 2. Build the Rust Library
 rust:
-	@cargo build --release
+	@cargo build --release -q
 
 # 3. List all available examples
 list:
@@ -31,9 +31,7 @@ list:
 # 4. THE MAIN RULE: Compile AND Run AND Clean
 # Usage: make 01_print_integer
 %: $(EXAMPLE_DIR)/%.c rust directories
-	@echo "Compiling $@..."
 	@$(CC) $< -o $(BIN_DIR)/$@ $(INCLUDES) $(LIBS)
-	@echo "--- Running $@ ---"
 	@./$(BIN_DIR)/$@
 	@$(MAKE) -s clean
 
@@ -41,4 +39,3 @@ list:
 clean:
 	@cargo clean -q
 	@rm -rf $(BIN_DIR)
-	@echo "Cleaned build artifacts."
