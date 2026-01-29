@@ -10,6 +10,8 @@
 
 ### :page_facing_up: Documentation
 
+- **(Updated README)** Updated README.md - ([54f82bd](https://github.com/NextStd/ns_io/commit/54f82bdfce6a8bf74b06f5ede9d2c98dbf4c53e2)) by @Vaishnav-Sabari-Girish
+
 - **(add license)** Added LICENSE - ([65835b4](https://github.com/NextStd/ns_io/commit/65835b4b9037fb07b783ccb7f86370a32defbac1)) by @Vaishnav-Sabari-Girish
 
 - **(add README)** Added README.md - ([797e2c2](https://github.com/NextStd/ns_io/commit/797e2c230f762fcff34a0a6ac7aaeae3b235bdd8)) by @Vaishnav-Sabari-Girish

@@ -87,7 +87,9 @@ make clean
 ```
 
 > [!NOTE]
-> The `make <example>` command can now run and clean artifacts, no there is no need to run `make clean` separately
+> The `make <example>` command can now run and clean artifacts, no there is no need to run `make clean` separately.
+
+> [!NOTE]
 > The same can be said for the `make rust` command. `make <example>` also builds the rust backend for library linking. So it need not be run separately.
 ---
 
