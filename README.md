@@ -45,7 +45,6 @@ You can build the Rust backend independently:
 
 ```bash
 make rust
-
 ```
 
 This generates the static and dynamic libraries in `target/release/`.
@@ -87,6 +86,9 @@ To clean all the build artifacts, run
 make clean
 ```
 
+> [!NOTE]
+> The `make <example>` command can now run and clean artifacts, no there is no need to run `make clean` separately
+> The same can be said for the `make rust` command. `make <example>` also builds the rust backend for library linking. So it need not be run separately.
 ---
 
 ## Usage in Your Code
