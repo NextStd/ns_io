@@ -1,3 +1,6 @@
+use std::ffi::CStr;
+use std::os::raw::c_char;
+
 // Print Integer 
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_print_int(val: i32) {
@@ -19,3 +22,26 @@ pub extern "C" fn ns_print_double(val: f64) {
     println!("{}", val);
 }
 
+
+// Print String
+#[unsafe(no_mangle)]
+// If the C string is not null terminaltes '\0' , the function will keep on reading memory until
+// the program crashes (Segfault)
+// The below supression is to prevent that 
+#[allow(clippy::not_unsafe_ptr_arg_deref)]
+pub extern "C" fn ns_print_string(ptr: *const c_char) {
+    // Never Dereference a NULL pointer
+    if ptr.is_null() {
+        println!("(null)");
+        return;
+    }
+
+    let c_str = unsafe {
+        CStr::from_ptr(ptr)
+    };
+
+    // Converting to Rust String
+    // "to_string_lossy()" is best if the string has non-UTF-8 characters
+    // Replaces them with <SPACE> instead of crashing
+    println!("{}", c_str.to_string_lossy());
+}

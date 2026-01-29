@@ -18,7 +18,8 @@ It is designed to provide the ergonomics of high-level languages (like automatic
 ### Current Support
 - [x] Integer Printing (`int`)
 - [x] Float/Double Printing (`float` / `double`)
-- [ ] String Printing
+- [x] String Printing
+- [ ] Printing Variables + String
 - [ ] User Input
 
 ---
@@ -127,6 +128,4 @@ ns_io/
 └── bin/                # Compiled executables (auto-generated)
 
 ```
-
-
 
