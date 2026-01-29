@@ -16,11 +16,16 @@ extern "C" {
   // Double in C is equivalent to f64 in Rust
   void ns_print_double(double val);
 
+  // Printing Strings
+  void ns_print_string(const char* val);
+
   // Generic Macro 
 #define ns_print(x) _Generic((x), \
 	int: ns_print_int, \
 	float: ns_print_float, \
-	double: ns_print_double \
+	double: ns_print_double, \
+	char*:  ns_print_string, \
+  const char*: ns_print_string \
 )(x)
 
 #ifdef __cplusplus
