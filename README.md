@@ -17,7 +17,7 @@ It is designed to provide the ergonomics of high-level languages (like automatic
 
 ### Current Support
 - [x] Integer Printing (`int`)
-- [ ] Float/Double Printing
+- [x] Float/Double Printing (`float` / `double`)
 - [ ] String Printing
 - [ ] User Input
 
