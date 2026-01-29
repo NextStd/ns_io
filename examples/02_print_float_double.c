@@ -6,12 +6,18 @@ int main(void)
   float zero = 0.0;
   float negative = -67.89;
 
+  // Double vars
+  double d1 = 789.67;
+
   // Test Generic Macro
   ns_print(count);
   ns_print(negative);
   ns_print(zero);
 
-  // Test Raw literal
+  // Double
+  ns_print(d1);
+
+  // Test Raw literal (Double)
   ns_print(345.78);
 
   return 0;
