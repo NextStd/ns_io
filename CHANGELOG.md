@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(Added string print)** Add string print - ([a785cdc](https://github.com/NextStd/ns_io/commit/a785cdcafaeecc3742715aaa4ab982fc35cb4be3)) by @Vaishnav-Sabari-Girish
+
 - **(updated examples)** 02_print_float_double updated - ([df9d5bc](https://github.com/NextStd/ns_io/commit/df9d5bc1e6ba6fc5b69665deaa8535b89bb78928)) by @Vaishnav-Sabari-Girish
 
 - **(add float and double)** Print float and double - ([ca02287](https://github.com/NextStd/ns_io/commit/ca022876c0c2b6424b52012a5fdb24832b54abe9)) by @Vaishnav-Sabari-Girish
@@ -31,6 +33,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #2 from NextStd/feat/add_string_print
+
+feat(Added string print): Add string print - ([3ee4993](https://github.com/NextStd/ns_io/commit/3ee49930e198060ce51dd10b1e2e54b932620de5)) in [#2](https://github.com/NextStd/ns_io/pull/2) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #1 from NextStd/feat/add_float_print
 
