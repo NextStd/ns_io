@@ -20,7 +20,7 @@ It is designed to provide the ergonomics of high-level languages (like automatic
 - [x] Float/Double Printing (`float` / `double`)
 - [x] String Printing
 - [ ] Printing Variables + String
-- [ ] User Input
+- [x] User Input
 
 ---
 

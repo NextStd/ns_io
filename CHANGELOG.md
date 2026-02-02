@@ -18,6 +18,8 @@
 
 ### :page_facing_up: Documentation
 
+- **(cl update)** Updated CHANGELOG - ([08b78f9](https://github.com/NextStd/ns_io/commit/08b78f9635290220a3f487fe9df0df0bf3d8309a)) by @Vaishnav-Sabari-Girish
+
 - **(cl update)** Added latest changes - ([5429a2d](https://github.com/NextStd/ns_io/commit/5429a2d705f357186937331b52ad6cbbf0de1116)) by @Vaishnav-Sabari-Girish
 
 - **(updated cl)** Updated CHANGELOG - ([3cf3f21](https://github.com/NextStd/ns_io/commit/3cf3f2135ea48f3d650df8f1708a238a9fe462a8)) by @Vaishnav-Sabari-Girish
