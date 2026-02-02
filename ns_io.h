@@ -6,7 +6,7 @@
 extern "C" {
 #endif
 
-  // Rust function
+  // -----Printing functions------
   // int in C is equivalent to i32 in Rust
   void ns_print_int(int val);
 
@@ -19,6 +19,11 @@ extern "C" {
   // Printing Strings
   void ns_print_string(const char* val);
 
+  // ----Reaing functions------ 
+  void ns_read_int(int* ptr);
+  void ns_read_float(float* ptr);
+  void ns_read_double(double* ptr);
+
   // Generic Macro 
 #define ns_print(x) _Generic((x), \
 	int: ns_print_int, \
@@ -26,6 +31,13 @@ extern "C" {
 	double: ns_print_double, \
 	char*:  ns_print_string, \
   const char*: ns_print_string \
+)(x)
+
+  // Generic Read macro 
+#define ns_read(x) _Generic((x), \
+    int*: ns_read_int, \
+    float*: ns_print_float, \
+    double*: ns_read_double \
 )(x)
 
 #ifdef __cplusplus
