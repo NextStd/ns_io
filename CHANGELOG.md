@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(Add user input)** User input added - ([70fb385](https://github.com/NextStd/ns_io/commit/70fb385247fc1d10c800173c7caf90ca1e6377f7)) by @Vaishnav-Sabari-Girish
+
 - **(Added string print)** Add string print - ([a785cdc](https://github.com/NextStd/ns_io/commit/a785cdcafaeecc3742715aaa4ab982fc35cb4be3)) by @Vaishnav-Sabari-Girish
 
 - **(updated examples)** 02_print_float_double updated - ([df9d5bc](https://github.com/NextStd/ns_io/commit/df9d5bc1e6ba6fc5b69665deaa8535b89bb78928)) by @Vaishnav-Sabari-Girish
@@ -15,6 +17,8 @@
 
 
 ### :page_facing_up: Documentation
+
+- **(cl update)** Added latest changes - ([5429a2d](https://github.com/NextStd/ns_io/commit/5429a2d705f357186937331b52ad6cbbf0de1116)) by @Vaishnav-Sabari-Girish
 
 - **(updated cl)** Updated CHANGELOG - ([3cf3f21](https://github.com/NextStd/ns_io/commit/3cf3f2135ea48f3d650df8f1708a238a9fe462a8)) by @Vaishnav-Sabari-Girish
 
@@ -35,6 +39,12 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/ns_io - ([27db5eb](https://github.com/NextStd/ns_io/commit/27db5eb0b9f819d71b8364899f3224a0dcdb8bfb)) by @Vaishnav-Sabari-Girish
+
+- Merge pull request #3 from NextStd/feat/user_input
+
+feat(Add user input): User input added - ([be1539c](https://github.com/NextStd/ns_io/commit/be1539caa671dc5b32e81c3c403d27c27e34f39f)) in [#3](https://github.com/NextStd/ns_io/pull/3) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #2 from NextStd/feat/add_string_print
 
